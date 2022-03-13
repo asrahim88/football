@@ -1,0 +1,352 @@
+    * {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* top section */
+
+    .top-section {
+        background-color: #2D25A0;
+        padding-top: 35px;
+        /* width: 90%; */
+    }
+
+    header {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* navigation bar */
+
+    nav {
+        height: 80px;
+        width: 100%;
+    }
+
+    nav ul {
+        float: left;
+        margin-left: 100px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+    }
+
+    a:hover {
+        background-color: #1b9bff;
+        transition: .7s;
+    }
+
+    label.log-in a {
+        font-size: 18px;
+        margin-top: 13px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-right: 100px;
+        background: #E02C6D;
+        display: block;
+        color: white;
+        float: right;
+    }
+
+    .icon-color {
+        color: white;
+    }
+
+    .checkbtn {
+        font-size: 30px;
+        color: black;
+        float: left;
+        line-height: 80px;
+        margin-left: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    /* Bottom header */
+
+    .bottom-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .turnament-headin {
+        width: 50%;
+        padding-left: 5%;
+    }
+
+    .turnament-headin h1 {
+        font-weight: 700;
+        font-size: 84px;
+        line-height: 100px;
+        color: #fff;
+    }
+
+    .banner {
+        width: 50%;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .watch {
+        width: 150px;
+        font-size: 18px;
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background: #E02C6D;
+        color: white;
+    }
+
+    /* players */
+    .players-section {
+        background-color: rgba(252, 252, 252, 0.753);
+    }
+
+    .players {
+        width: 80%;
+        margin: auto;
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .grid-cell img {
+        width: 100%;
+    }
+
+    .grid-cell {
+        background-color: white;
+        color: rgb(58, 58, 58);
+        padding: 10px;
+        -webkit-box-shadow: 1px 3px 7px 3px rgba(0, 0, 0, 0.26);
+        box-shadow: 1px 3px 7px 3px rgba(0, 0, 0, 0.26);
+    }
+
+    /* all high light */
+    .highlt-section {
+        padding: 30px 15px;
+        background: rgba(252, 252, 252, 0.753);
+    }
+
+    .all-high-light {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .high-light {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .high-light h1 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .high-light p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .high-light .watch-now {
+        width: 172px;
+        height: 44px;
+        border: none;
+        background: #E02C6D;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .high-light-image {
+        width: 50%;
+    }
+
+    .high-light-image img {
+        width: 100%;
+    }
+    /* footer */
+    .footer-section {
+        background: rgba(252, 252, 252, 0.753);
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-img {
+        width: 30%;
+    }
+    .footer-img img {
+        width: 100%;
+    }
+    .social-icon {
+        font-size: 40px;
+        background: #E7E7E8;
+        padding: 10px;
+        border-radius: 50%;
+        color: gray;
+    }
+    @media (max-width: 1080px) {
+        .top-section {
+            padding-top: 20px;
+        }
+
+        header {
+            width: 100%;
+            margin: 0;
+        }
+
+        label.log-in a {
+            font-size: 18px;
+            padding-right: 19px;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            font-size: 16px;
+        }
+
+        .checkbtn {
+            display: block;
+            color: white;
+        }
+
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #2D25A0;
+            top: 80px;
+            right: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+
+        nav ul li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+
+        ul li a {
+            color: white;
+            font-size: 20px;
+        }
+
+        a:hover,
+        a.active {
+            background: none;
+            color: #0082e6;
+        }
+
+        #check:checked~ul {
+            right: 0;
+        }
+
+        .bottom-header {
+            flex-direction: column;
+            align-items: left;
+        }
+
+        .turnament-headin {
+            width: 100%;
+            padding-left: 10px;
+        }
+
+        .turnament-headin h1 {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        .banner {
+            width: 100%;
+            padding-top: 50px;
+        }
+
+        /* players */
+        .players {
+            width: 100%;
+            margin: 0;
+            padding-top: 25px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 20px;
+        }
+
+        .grid-cell {
+            margin: 15px;
+        }
+
+        .all-high-light {
+            width: 100%;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .high-light {
+            width: 100%;
+        }
+
+        .high-light h1 {
+            font-size: 35px;
+            line-height: 50px;
+        }
+
+        .high-light-image {
+            width: 100%;
+        }
+        /* footer */
+        .footer-img {
+            width: 80%;
+        }
+        .footer-img img {
+            width: 100%;
+        }
+    }
